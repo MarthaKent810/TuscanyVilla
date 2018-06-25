@@ -1,0 +1,641 @@
+﻿.container{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(80, 50px);
+    margin: auto;
+    max-width: 1366px;
+    width: 100%;
+}
+.logo{
+    background-color: grey;
+    color: white;
+    grid-column: 1 / 5;
+    grid-row: 1;
+    padding:15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav {
+    background-color: grey;
+    color: white;
+    grid-column: 5 / 10;
+    grid-row: 1;
+    align-content:center;
+}
+
+ul {
+    list-style-type: none;
+    margin:10px;
+    padding-bottom: 0;
+}
+
+li {
+    float: right;
+    display: block;
+    padding:20px;
+    justify-content: space-between;
+    align-content: center;
+    padding-bottom: 20px;
+    margin:-8px;
+    font-family:'Hind', sans-serif;
+    font-size:10px;
+    
+}
+
+.grid-item-3 {
+    display: flex;
+    flex-direction:column;
+    background-image: url('images/tuscanyvilla.jpg');
+    grid-column: 1 / 8;
+    grid-row: 2 / 7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    flex-wrap:wrap;
+   
+}
+#villa {
+    display:flex;
+    font-family: 'Hind', sans-serif;
+    font-size: 40px;
+    justify-content:center;
+    color:white;
+}
+
+#villa2 {
+    display: flex;
+    font-family: 'Hind', sans-serif;
+    font-size: 20px;
+    color:white;
+    justify-content: center;
+    padding-bottom:60px;
+}
+
+.grid-item-4 {
+    display: flex;
+    grid-column: 8 / 10;
+    grid-row: 2 /7;
+    background-image: url('images/tuscanmap.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-item-5 {
+    display:flex;
+    flex-direction:column;
+    grid-column: 1 / 10;
+    grid-row:7 /10;
+    background-color: grey;
+    justify-content: center;
+    align-content: center;
+}
+#locations {
+    display: flex;
+    font-family: 'Hind', sans-serif;
+    font-size: 30px;
+    justify-content: center;
+    color: white;
+}
+#locations2 {
+    display: flex;
+    font-family: 'Hind', sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    color: white;
+    padding-bottom: 60px;
+}
+
+.grid-item-6 {
+    grid-column: 1 / 6;
+    grid-row:10 / 18;
+    margin: 100px;
+ 
+}
+#location1 {
+    font-family: 'Hind', sans-serif;
+    font-size: 25px;
+}
+#location1p {
+    font-family: 'Hind', sans-serif;
+    font-size: 14px;
+}
+.button1 {
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+}
+
+.grid-item-7 {
+    grid-area: flex;
+    background-image: url('images/location1.jpeg');
+    background-repeat: no-repeat;
+    background-size:425px 500px;
+    margin:50px;
+    padding:50px;
+    grid-column: 6 / 10;
+    grid-row: 10 / 18;
+}
+
+.grid-item-8 {
+    display: flex;
+    background-image: url('images/location2.jpeg');
+    background-repeat: no-repeat;
+    background-size: 500px 250px;
+    background-position: 5% 40%;
+    padding:50px;
+    border:50px;
+    grid-column: 1 / 10;
+    grid-row: 18 / 25;
+    background-color: grey;
+    color:white;
+}
+.absolute {
+    position: absolute;
+    top: 900px;
+    left: 600px;
+    width: 600px;
+    height: 400px;
+    flex-direction: row;
+}
+.button2 {
+    background-color: white;
+    border: none;
+    color: gray;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+#location2 {
+    font-family: 'Hind', sans-serif;
+    font-size: 25px;
+}
+#location2p {
+    font-family: 'Hind', sans-serif;
+    font-size: 14px;
+}
+
+.grid-item-9 {
+    grid-column: 1 / 6;
+    grid-row:25 / 33;
+    margin: 100px;
+
+}
+#location3 {
+    font-family: 'Hind', sans-serif;
+    font-size: 25px;
+}
+#location3p {
+    font-family: 'Hind', sans-serif;
+    font-size: 14px;
+}
+
+.button3 {
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.grid-item-10 {
+    grid-area: flex;
+    grid-column: 6 / 10;
+    grid-row: 25 / 33;
+    background-image: url('images/location3.jpeg');
+    background-repeat: no-repeat;
+    background-size: 425px 500px;
+    margin: 50px;
+    padding: 50px;
+}
+
+.grid-item-11 {
+    background-color: gray;
+    color:white;
+    grid-column: 1 / 10;
+    grid-row: 33 / 36;
+    text-align:center;
+    justify-content:center;
+}
+#amenities {
+    display: flex;
+    font-family: 'Hind', sans-serif;
+    font-size: 30px;
+    justify-content: center;
+    color: white;
+}
+#amenitiesp {
+    display: flex;
+    font-family: 'Hind', sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    align-content:center;
+    color: white;
+    padding-bottom: 60px;
+}
+.grid-item-12 {
+    display: flex;
+    background-image: url('images/receptions.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    grid-column: 1 / 4;
+    grid-row: 36 / 44;
+    margin-top:40px;
+}
+.reception {
+    background-color: gray;
+    opacity:.9;
+    border: none;
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 28px;
+    margin: auto;
+}
+
+.grid-item-13 {
+    display: flex;
+    flex-direction: column;
+    grid-column: 4 / 7;
+    grid-row: 36 / 44;
+    justify-content: center;
+    text-align:center;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+#avilla {
+    font-family:'Hind', sans-serif;
+    font-size: 28px;
+    justify-content:center;
+    text-align:center;
+}
+#avillap {
+    font-family: 'Hind', sans-serif;
+    font-size: 16px;
+}
+.button {
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: auto;
+    
+ }
+
+.grid-item-14 {
+    display: flex;
+
+    background-image: url('images/relaxbypool.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 7 / 10;
+    grid-row: 36 / 44;
+    margin-top:40px;
+}
+.relax {
+    background-color: gray;
+    opacity: .9;
+    border: none;
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 28px;
+    margin: auto;
+}
+.grid-item-15 {
+    grid-column: 1 / 4;
+    grid-row: 44 / 51;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+#what {
+    font-family:"Hind", sans-serif;
+    font-size:32px;
+    justify-content:center;
+}
+#whatp {
+    font-family: "Hind", sans-serif;
+    font-size: 16px;
+}  
+
+.grid-item-16 {
+    display: flex;
+    background-image: url('images/feelslikehome.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 4 / 7;
+    grid-row: 44 /51;
+}
+.home {
+    background-color: gray;
+    opacity: .9;
+    border: none;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 28px;
+    margin: auto;
+}
+.grid-item-17 {
+    grid-column: 7 / 10;
+    grid-row: 44 / 51;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+#talk {
+    font-family: "Hind", sans-serif;
+    font-size: 32px;
+    justify-content: center;
+}
+#talkp {
+    font-family: "Hind", sans-serif;
+    font-size: 16px;
+}
+.grid-item-18 {
+    display: flex;
+    background-image: url('images/enjoyview.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1 / 4;
+    grid-row: 51 / 59;
+}
+.view {
+    background-color: gray;
+    opacity: .9;
+    border: none;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 28px;
+    margin: auto;
+}
+
+.grid-item-19 {
+    grid-column: 4 / 7;
+    grid-row: 51 / 59;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+
+#book {
+    font-family: "Hind", sans-serif;
+    font-size: 32px;
+    justify-content: center;
+}
+#bookp {
+    font-family: "Hind", sans-serif;
+    font-size: 16px;
+}
+.grid-item-20 {
+    display: flex;
+    background-image: url('images/privatedining.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 7 / 10;
+    grid-row: 51 / 59;
+}
+.dining {
+    background-color: gray;
+    opacity: .9;
+    border: none;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 28px;
+    margin: auto;
+}
+
+.grid-item-21 {
+    display: flex;
+    grid-column: 1 / 10;
+    grid-row: 59 / 62;
+    background-color: gray;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+}
+#reviews {
+    display: flex;
+    font-family: 'Hind', sans-serif;
+    font-size: 30px;
+    justify-content: center;
+    color: white;
+    
+}
+#reviewsp {
+    display: flex;
+    font-family: 'Hind', sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    color: white;
+    padding-bottom: 60px;
+}
+
+.grid-item-22 {
+    grid-column: 1 / 10;
+    grid-row:62 / 67;
+}
+.carousel-wrapper {
+    height: 200px;
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 35px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 50px;
+    height: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background: url("http://dancort.es/assets/img/css-carousel/carousel-arrow-dark.png") 50% 50% / 20px no-repeat;
+}
+
+.arrow-prev {
+    left: 0;
+}
+
+.arrow-next {
+    right: 0;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.light {
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+    }
+}
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+}
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    color: grey;
+    text-align: center;
+}
+
+.item-2 {
+    color:grey;
+    text-align:center;
+   
+}
+
+.item-3 {
+    color: grey;
+    text-align: center;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+}
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+}
+
+
+.grid-item-23 {
+    background-color: gray;
+    grid-column: 1 / 10;
+    grid-row: 67 / 70;
+    justify-content: center;
+    align-content: center;
+}
+#contact {
+    display: flex;
+    font-family: 'Hind', sans-serif;
+    font-size: 30px;
+    justify-content: center;
+    color: white;
+}
+#answer {
+    display: flex;
+    font-family: 'Hind', sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    color: white;
+    
+}
+
+.grid-item-24 {
+    grid-column: 1 / 5;
+    grid-row: 70 / 77;
+    color:grey;
+    font-family:'Open Sans', sans-serif;
+    font-size: 14px;
+    top: 50px;
+    left:50px;
+    padding-top:50px;
+    padding-left: 50px;
+}
+.grid-item-25 {
+    grid-column: 5 / 10;
+    grid-row:70 / 77;
+    color:grey;
+    top: 50px;
+    bottom:20px;
+    padding-top:50px;
+    padding-right:385px;
+    font-family:'Open sans', sans-serif;
+    font-size: 12px;
+   
+}
+input[type=submit] {
+    display:flex;
+    background-color:gray;
+    color:white;
+    /*align-content:right;*/
+    float:right;
+   
+}
+.grid-item-26 {
+    grid-column: 1 / 10;
+    grid-row: 77 / 81;
+    background-color: grey;
+    color:white;
+    top:50px;
+    padding:50px;
+}
+#create {
+    display:flex;
+    font-family: 'Hind', sans-serif;
+    font-size: 12px;
+    justify-content: center;
+    align-content: center;
+}
+#copy {
+    display:flex;
+    font-family: 'Hind', sans-serif;
+    font-size: 12px;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
